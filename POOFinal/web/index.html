@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <title>Programa de alocação de Horários</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Esse programa cria um Professor</h1>
+        <form action = "Servlets/CriaProfessorServlet" method = "POST">
+            <table>
+                <tr><td><label for="nomeid">Nome: </label></td><td><input type = "text" name = "nome" placeholder = "João, Maria, ..." id = "nomeid"/></td></tr>
+                <tr><td><label for="siapeid">Siape: </label></td><td><input type = "text" name = "siape" id = "siapeid"/></td></tr>
+                <tr><td><label for="formacaoid">Formação: </label></td><td><input type = "text" name = "formacao" placeholder = "Ciência da Computação" id = "formacaoid"/></td></tr>
+                <tr><td><label for="cpfid">CPF: </label></td><td><input type = "text" name = "cpf" id = "cpfid"/></td></tr>
+                <tr><td><label for="sexoid">Sexo: </label></td><td><input type = "text" name = "sexo" id = "sexoid"/></td></tr>
+            
+                <input type = "submit" value = "Cadastrar">
+            </table>
+        </form>
+    </body>
+</html>
