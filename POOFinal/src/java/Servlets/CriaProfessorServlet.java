@@ -1,11 +1,5 @@
 package Servlets;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 import Exception.ProfessorInvalidoException;
 import Exception.TamanhoInvalidoArrayException;
 import Universidade.Professor;
@@ -24,7 +18,6 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Gabriel Gonçalves
  */
-@WebServlet("Servlets/CriaProfessorServlet")
 public class CriaProfessorServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

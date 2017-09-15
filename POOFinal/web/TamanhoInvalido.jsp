@@ -6,6 +6,7 @@
         <title>Tamanho Inválido</title>
     </head>
     <body>
+        <a href="index.html">Voltar para a página inicial</a>
         <h1>Um erro completamente inesperado aconteceu!</h1>
     </body>
 </html>

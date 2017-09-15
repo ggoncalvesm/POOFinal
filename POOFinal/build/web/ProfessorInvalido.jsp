@@ -12,6 +12,7 @@
         <title>Professor Inválido</title>
     </head>
     <body>
+        <a href="index.html">Voltar para a página inicial</a>
         <h1>Um erro completamente esperado aconteceu!</h1>
     </body>
 </html>

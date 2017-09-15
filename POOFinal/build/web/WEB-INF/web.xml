@@ -4,9 +4,25 @@
         <servlet-name>CriaProfessorServlet</servlet-name>
         <servlet-class>Servlets.CriaProfessorServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CriaProfessorServletn</servlet-name>
+        <servlet-class>Servlets.CriaProfessorServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CriaTurmaServlet</servlet-name>
+        <servlet-class>Servlets.CriaTurmaServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CriaProfessorServlet</servlet-name>
         <url-pattern>/CriaProfessorServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CriaProfessorServletn</servlet-name>
+        <url-pattern>/CriaProfessorServletn</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CriaTurmaServlet</servlet-name>
+        <url-pattern>/CriaTurmaServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

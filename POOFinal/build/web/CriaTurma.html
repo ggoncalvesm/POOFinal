@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <title>Programa de alocação de Horários</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Esse programa cria os horários da universidade</h1>
+        <a href = "index.html">Cadastro de professor</a>
+        
+        <form action = "CriaTurmaServlet" method = "POST">
+            <table>
+                <tr><td><label for="nomeid">Nome: </label></td><td><input type = "text" name = "nome" placeholder = "POO, PAA, ..." id = "nomeid"/></td></tr>
+                <tr><td><label for="idid">ID: </label></td><td><input type = "number" name = "id" id = "idid"/></td></tr>
+                <tr><td><label for="professorid">Formação: </label></td><td><input type = "text" name = "professor" placeholder = "João, Maria, ..." id = "professorid"/></td></tr>
+                <tr><td><label for="limiteAlunosid">Qnt. Alunos: </label></td><td><input type = "number" name = "limiteAlunos" id = "limiteAlunosid"/></td></tr>
+                <tr><td><label for="aulasSemanaisid">Aulas/Semana: </label></td><td><input type = "number" name = "aulasSemanais" id = "aulasSemanaisid"/></td></tr>
+            </table>
+            <input type = "submit" value = "Cadastrar">
+        </form>
+    </body>
+</html>

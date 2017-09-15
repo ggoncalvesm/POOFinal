@@ -5,17 +5,14 @@ import Externo.Grade;
 import Externo.Pessoa;
 import Externo.PossuiGrade;
 import Exception.TamanhoInvalidoArrayException;
+import FalsaDao.ProfessorDAO;
 import java.util.ArrayList;
 
 public class Professor extends Pessoa implements PossuiGrade{
-    public static ArrayList<Professor> professores = new ArrayList<Professor>();
     private Grade horario;
     private String formacao;
     private int siape;
-    public Professor(String nome, String cpf, char sexo) {
-        super(nome, cpf, sexo);
-    }
-
+    
     public Professor(String formacao, int siape, String nome, String cpf, char sexo) throws TamanhoInvalidoArrayException, ProfessorInvalidoException{
         super(nome, cpf, sexo);
         if(formacao == null || siape < 0){
@@ -24,7 +21,8 @@ public class Professor extends Pessoa implements PossuiGrade{
             this.horario = new Grade<Turma>(horasDia,diasSemana);
             this.formacao = formacao;
             this.siape = siape;
-            professores.add(this);
+            ProfessorDAO banco = new ProfessorDAO();
+            banco.adiciona(this);
         }
     }
 

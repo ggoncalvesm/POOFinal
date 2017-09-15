@@ -4,10 +4,12 @@ import Externo.Grade;
 import Externo.PossuiGrade;
 import Exception.TurmaInvalidaException;
 import Exception.TamanhoInvalidoArrayException;
+import FalsaDao.TurmaDAO;
 import java.util.ArrayList;
 import java.util.Random;
 
 public class Turma implements PossuiGrade{
+    
     private String nome;
     private int id;
     private ArrayList<Aluno> alunosMatriculados = new ArrayList<Aluno>();
@@ -32,6 +34,8 @@ public class Turma implements PossuiGrade{
             this.docente = docente;
             this.limiteAlunos = limiteAlunos;
             this.aulasSemanais = aulasSemanais;
+            TurmaDAO banco = new TurmaDAO();
+            banco.adiciona(this);
         }
     }
 

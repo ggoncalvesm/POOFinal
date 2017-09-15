@@ -4,6 +4,8 @@
     Author     : Gabriel Gonçalves
 --%>
 
+<%@page import="FalsaDao.ProfessorDAO"%>
+<%@page import="Universidade.Turma"%>
 <%@page import="Universidade.Professor"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -13,13 +15,15 @@
         <title>Página do Professor</title>
     </head>
     <body>
+        <a href="index.html">Voltar para a página inicial</a>
         <%
-            if(Professor.professores.size() > 0){
-                %>
-                <h1>Deu certo</h1>
-            <%}else{%>
-                <h1>Algo deu errado :-( </h1>
-            <%}
-        %>
+            ProfessorDAO banco = new ProfessorDAO();
+            if(banco.qntElementos() > 0){
+                Professor professor = banco.consulta(0);
+                out.print("Professor "+professor+" criado");
+            }
+            else{
+                out.print("Algo deu errado :-(");
+            }%>
     </body>
 </html>
